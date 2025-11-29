@@ -1,0 +1,101 @@
+/* main container */
+
+.login_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+/* content */
+
+.login_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 3vw;
+  background-color: rgba(44, 44, 129, 0.096);
+  border: solid rgb(159, 167, 159) 4px;
+  border-radius: 20px;
+  gap: 3vh;
+  width: auto;
+}
+
+/* title */
+
+.login_content .login_title {
+  font-size: 2.5rem;
+  color: rgb(16, 69, 243);
+}
+
+/* inputs */
+
+.login_container .input_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* IonItem especifico para inputs */
+.login_container ion-item {
+  overflow: visible;
+  --background: transparent;
+  --border-style: none;
+  --inner-border-width: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+/* links */
+
+.login_content {
+  .link_container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .link_container a {
+    text-decoration: none;
+  }
+
+  .link_container a:hover {
+    animation: 0.5s loginAnchorAnimation forwards;
+  }
+
+  .link_container a:not(:hover) {
+    animation: 0.5s loginReverseAnchorAnimation forwards;
+  }
+}
+
+/* button */
+
+.login_button {
+  padding: 6px 8px;
+  --background: rgb(165, 170, 236);
+}
+
+/* transitions */
+
+@keyframes loginAnchorAnimation {
+  0% {
+    color: rgb(46, 93, 247);
+  }
+
+  100% {
+    color: rgb(102, 102, 236);
+  }
+}
+
+@keyframes loginReverseAnchorAnimation {
+  0% {
+    color: rgb(102, 102, 236);
+    
+  }
+
+  100% {
+    color: rgb(46, 93, 247);
+  }
+}

@@ -1,0 +1,6 @@
+.darkDefault_background {
+    --background: rgb(2, 0, 14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
